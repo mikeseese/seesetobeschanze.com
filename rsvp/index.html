@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding of Michael Seese and Kirsten Schanze | RSVP</title>
+    <link rel="stylesheet" href="/css/foundation.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <style>
+      #header {
+        background-image: url('/img/gal-137.jpg');
+        background-position: 0px -350px;
+        background-position: center bottom;
+      }
+      .sticky_bar.is-stuck {
+        background-image: url('/img/gal-137.jpg');
+        background-position: 0px -350px;
+        background-position: center top;
+      }
+      .plus_one {
+        display: none;
+      }
+      #alert_box {
+        visibility: hidden;
+      }
+      form {
+        margin-top: 5px;
+        margin-bottom: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+
+      <div id="menu_icon" class="hide-for-large">
+        <div onclick="show_menu();" class="small-2 small-push-10 medium-1 medium-push-11 columns">
+          <img src="/img/menu_icon.png" />
+        </div>
+      </div>
+
+      <div id="vertical_menu" class="row hide-for-large">
+        <div class="small-12 columns">
+          <ul class="vertical menu">
+            <div class="small-12 columns">
+              <li><a href="/">ABOUT US</a></li>
+              <li><a href="/festivities">FESTIVITIES</a></li>
+              <li><a href="/wedding_party">WEDDING PARTY</a></li>
+              <li><a href="/the_city">THE CITY</a></li>
+              <li class="current_page_vertical"><a href="/rsvp">RSVP</a></li>
+              <li><a href="/registry">REGISTRY</a></li>
+              <li><a href="/afterparty">AFTER PARTY</a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 large-6 large-push-3 columns">
+          <p id="initials">K + M</p>
+        </div>
+      </div>
+
+      <div data-sticky-container class="align_bottom show-for-large" id="data_sticky">
+        <div class="sticky sticky_bar" data-sticky data-margin-top="0" data-margin-btm="0" data-top-anchor="data_sticky:top" data-check-every="1" data-sticky-on="small" data-btm-anchor="body_text:bottom">
+          <nav id="magellan_bar" data-magellan>
+            <div class="row">
+              <div class="small-12 columns align_center">
+                <ul class="horizontal menu expanded">
+                  <li><a class="nav_bar_button" href="/">ABOUT US</a></li>
+                  <li><a class="nav_bar_button" href="/festivities">FESTIVITIES</a></li>
+                  <li><a class="nav_bar_button" href="/wedding_party">WEDDING PARTY</a></li>
+                  <li><a class="nav_bar_button" href="/the_city">THE CITY</a></li>
+                  <li class="current_page"><a class="nav_bar_button" href="/rsvp">RSVP</a></li>
+                  <li><a class="nav_bar_button" href="/registry">REGISTRY</a></li>
+                  <li><a class="nav_bar_button" href="/afterparty">AFTER PARTY</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div id="body_text">
+
+      <div class="row" id="javascript_warning">
+        <div class="small-12 large-6 large-push-3 columns">
+          <div id="callout_box" class="alert callout">
+            <div>For full functionality of this site it is necessary to enable JavaScript. <br>
+            Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 large-4 large-push-4 columns">
+          <p class="section_header">RSVP</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 large-8 large-push-2 columns">
+          The RSVP form has been closed. Please contact <a href="mailto:rsvp@seesetobeschanze.com">rsvp@seesetobeschanze.com</a> if you have any questions/concerns.
+        </div>
+      </div>
+      <form style="display: none;" id="rsvp_form" method="POST" action="rsvp.php">
+        <div class="row">
+          <div class="small-12 large-6 large-push-3 columns align_center">
+            <input type="radio" name="rsvptype" value="new" id="new_response" onclick="do_new_response();" checked="checked"><label for="new_response">New Response</label>
+            <input type="radio" name="rsvptype" value="retrieve" id="modify_response" onclick="do_modify_response();"><label for="modify_response">Modify Existing Response</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 large-6 large-push-3 columns">
+            <label>Full Name (First Guest)*</label>
+            <input type="text" id="fullname0" name="fullname0">
+          </div>
+        </div>
+        <div class="row new_response_field">
+          <div class="small-12 large-6 large-push-3 columns">
+            <label>E-mail Address</label>
+            <input type="text" name="email" id="email">
+          </div>
+        </div>
+        <div class="row new_response_field">
+          <div class="small-12 large-6 large-push-3 columns">
+            <label>Phone Number (if you prefer to be contacted by phone)</label>
+            <input type="text" name="phonenumber" id="phonenumber">
+          </div>
+        </div>
+        <div class="row new_response_field">
+          <div class="small-12 large-6 large-push-3 columns">
+            <label>Attendance*</label>
+            <input type="radio" name="attendance" value="1" id="can_attend"><label id="can_attend_label" for="can_attend">Yes, I'll be there!</label>
+            <input type="radio" name="attendance" value="0" id="cannot_attend"><label id="cannot_attend_label" for="cannot_attend">No, I will celebrate from afar.</label>
+          </div></label>
+        </div>
+        <div class="row new_response_field">
+          <div class="small-12 large-6 large-push-3 columns">
+            <label>I'm bringing a guest!</label>
+            <input onclick="plus_one();" id="guests" type="checkbox" name="guests">
+          </div>
+        </div>
+        <div class="row plus_one new_response_field">
+          <div class="small-12 large-6 large-push-3 columns">
+            <label>Full Name (Second Guest)*</label>
+            <input type="text" id="fullname1" name="fullname1" id="fullname1">
+          </div>
+        </div>
+        <div class="row new_response_field">
+          <div class="small-12 large-6 large-push-3 columns">
+            <label>What song will get you up and dancing?</label>
+            <input type="text" name="song" id="song">
+          </div>
+        </div>
+        <div class="row new_response_field">
+          <div class="small-12 large-6 large-push-3 columns">
+            <label>Message to Mike and Kirsten (please include food allergies or if you need additional guests)</label>
+            <textarea name="comments" id="comments"></textarea>
+          </div>
+        </div>
+        <div class="row" id="alert_box">
+          <div class="small-12 large-6 large-push-3 columns">
+            <div id="callout_box" class="alert callout">
+              <div id="callout_text">This is an alert - alert that is rounded.</div>
+              <!--<a href="#" class="close">&times;</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-4 small-push-4 columns" style="text-align: center;">
+            <input class="button" type="submit" name="submit" value="Submit">
+          </div>
+        </div>
+        <input type="hidden" name="database_id" id="database_id" value="-1" />
+        <input type="hidden" name="do_modify" id="do_modify" value="false" />
+      </form>
+    </div>
+
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/vendor/what-input.min.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/rsvp.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72579944-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+
+body {
+  background-color: #f8f7f0;
+  color: #666;
+  font-family: 'Varela Round', sans-serif;
+}
+#header {
+  position: relative;
+  background-image: url('/img/engagement_dinner.jpg');
+  background-attachment: fixed;
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#magellan_bar {
+  background-color: rgba(72,64,49, 0.76);
+}
+#magellan_bar div ul li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+.sticky_bar {
+  width: 100%;
+}
+.sticky_bar.is-stuck {
+  background-image: url('/img/engagement_dinner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav_bar_button {
+  color: white;
+  text-align: center;
+}
+.current_page {
+  padding-bottom: 5px;
+  border-bottom: solid 5px #0047ab;
+}
+.align_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*vertical-align: bottom;
+  display: inline-block;*/
+}
+.section_header {
+  color: black;
+  text-align: center;
+  font-size: 4em;
+}
+#initials {
+  text-align: center;
+  font-size: 7em;
+  color: rgba(255,255,255,0.75);
+  margin-top: 150px;
+}
+#body_text {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.clip_circle_large {
+  border-radius: 50%;
+}
+.align_center {
+  text-align: center;
+}
+#vertical_menu {
+  position: absolute;
+  top: 0px;
+  padding-top: 30px;
+  display: none;
+  width: 100%;
+  background-color: #0047ab;
+  z-index: 0;
+}
+#vertical_menu ul li {
+  margin-bottom: 30px;
+}
+#vertical_menu ul li a {
+  color: #ffffff;
+}
+.current_page_vertical {
+  border-bottom: solid 5px #ffffff;
+}
+#menu_icon {
+  position: relative;
+  top: 15px;
+  z-index: 1;
+}
+.sunflower_separator {
+  border-bottom: solid 1px grey;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.sunflower_separator img {
+  width: 32px;
+  height: auto;
+  position: relative;
+  top: 16px;
+  background-color: #f8f7f0;
+}
+#javascript_warning {
+  display: block;
+  margin-top: 5rem;
+}
+.menu.expanded > li:nth-last-child(5):first-child ~ li {
+  width: 19.6%;
+}
+.menu.expanded li img {
+  width: 95%;
+}
